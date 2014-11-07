@@ -45,6 +45,7 @@ function convertHTML(aEvent) {
   span = document.createElement('SPAN');
   span.appendChild(content);
   var htmlContent = span.innerHTML;
+  range.insertNode(span);
   var md = HTML2Markdown(htmlContent);
   GM_setClipboard(md, 'text');
 }
