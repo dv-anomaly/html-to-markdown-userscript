@@ -5,7 +5,7 @@ A Userscript to automatically convert selected HTML on a web page to Markdown fo
 ## Requirements
 
 * [**Greasemonkey**](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (on Firefox)
-* [**Tampermonkey**](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (on Chrome)
+* [**Tampermonkey**](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) (on Chrome)
 
 ## How to Install
 * Make sure you have installed the Greasemonkey or Tampermonkey plugin based on your browser.
