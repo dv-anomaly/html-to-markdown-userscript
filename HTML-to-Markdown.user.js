@@ -40,12 +40,11 @@ function addParamsToForm(aForm, aKey, aValue) {
 }
 
 function convertHTML(aEvent) {
-  var range = window.getSelection().getRangeAt(0),
-  content = range.extractContents(),
+  var range = window.getSelection().getRangeAt(0);
+  fragment = range.cloneContents();
   span = document.createElement('SPAN');
-  span.appendChild(content);
-  var htmlContent = span.innerHTML;
-  range.insertNode(span);
-  var md = HTML2Markdown(htmlContent);
+  span.appendChild(fragment);
+  content = span.innerHTML;
+  var md = HTML2Markdown(content);
   GM_setClipboard(md, 'text');
 }
